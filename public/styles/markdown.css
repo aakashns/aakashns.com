@@ -48,13 +48,15 @@
 .markdown-body a {
   background-color: transparent;
   color: #5398f9;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #5398f966;
 }
 
 .markdown-body abbr[title] {
   border-bottom: none;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
+  text-decoration-color: #5398f9;
 }
 
 .markdown-body b,
