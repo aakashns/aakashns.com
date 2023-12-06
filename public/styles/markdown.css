@@ -56,7 +56,6 @@
   border-bottom: none;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  text-decoration-color: #5398f9;
 }
 
 .markdown-body b,
@@ -175,6 +174,7 @@
 
 .markdown-body a:hover {
   text-decoration: underline;
+  text-decoration-color: #5398f9;
 }
 
 .markdown-body ::placeholder {
