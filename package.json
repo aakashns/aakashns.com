@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "npx wrangler pages dev ./public --compatibility-date=2023-12-01 --live-reload"
+    "start": "npx wrangler pages dev ./public --compatibility-date=2023-12-01"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231121.0",
@@ -9,5 +9,10 @@
   },
   "prettier": {
     "printWidth": 120
+  },
+  "dependencies": {
+    "@types/clean-css": "^4.2.11",
+    "marked": "^11.0.0",
+    "snarkdown": "^2.0.0"
   }
 }
