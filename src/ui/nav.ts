@@ -5,12 +5,12 @@ registerCSS(
   /* CSS */ `
     .nav {
       & .nav-link {
-        color: rgb(209 213 219);
+        color: rgb(156 163 175);
         text-decoration: none;
       }
 
       & .nav-link:hover {
-        color: rgb(156 163 175);
+        color: rgb(209 213 219);
       }
     }
 `
