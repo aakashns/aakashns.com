@@ -1,3 +1,3 @@
 # aakashns.com
 
-My [personal website](https://aakashns.com) built and hosted using TypeScript and Cloudflare Pages.
+My [personal website](https://aakashns.com) built with TypeScript and hosted using Cloudflare Pages.
