@@ -29,19 +29,20 @@ registerCSS(
   `
 );
 
-export const renderLayout = (children: string, options: { title: string }) =>
-  /* HTML */
-  `<!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <title>${options.title}</title>
-        <link rel="stylesheet" href="/styles/normalize.css" />
-        <link rel="stylesheet" href="/styles/markdown.css" />
-        <style type="text/css">
-          ${generateCSS()}
-        </style>
-      </head>
-      <body>
-        <div class="container">${nav} ${children}</div>
-      </body>
-    </html>`;
+export const renderLayout = (
+  children: string,
+  options: { title: string }
+) => /* HTML */ `<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>${options.title}</title>
+      <link rel="stylesheet" href="/styles/normalize.css" />
+      <link rel="stylesheet" href="/styles/markdown.css" />
+      <style type="text/css">
+        ${generateCSS()}
+      </style>
+    </head>
+    <body>
+      <div class="container">${nav} ${children}</div>
+    </body>
+  </html>`;
