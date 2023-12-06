@@ -39,7 +39,7 @@ export const renderLayout = (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="/styles/normalize.css" />
       <link rel="stylesheet" href="/styles/markdown.css" />
-      <meta name="title" content=${options.title} />
+      <meta name="title" content="${options.title}" />
       <meta name="description" content="${options.description}" />
 
       <link
