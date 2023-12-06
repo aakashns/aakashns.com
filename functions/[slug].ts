@@ -4,6 +4,25 @@ import { registerCSS } from "@/src/lib/styles";
 import { renderMarkdown } from "@/src/ui/markdown";
 import { renderPageHeading } from "@/src/ui/pageHeading";
 
+function makeMetaDescription(text: string): string {
+  // Finding the end of the first paragraph
+  const paragraphEnd = text.indexOf("\n");
+  let firstParagraph =
+    paragraphEnd > -1 ? text.substring(0, paragraphEnd) : text;
+
+  // Trimming if the paragraph is longer than 160 characters
+  if (firstParagraph.length > 160) {
+    // Finding the last space within the 156 character limit
+    const trimEnd = firstParagraph.lastIndexOf(" ", 156);
+    firstParagraph =
+      trimEnd > -1
+        ? firstParagraph.substring(0, trimEnd) + "..."
+        : firstParagraph;
+  }
+
+  return firstParagraph;
+}
+
 registerCSS(
   "post-page",
   /* CSS */ `
@@ -24,7 +43,10 @@ const renderPostPage = (post: Post, content: string) =>
         ${renderMarkdown(content)}
       </div>
     `,
-    { title: `${post.title} - Aakash N S` }
+    {
+      title: `${post.title} - Aakash N S`,
+      description: makeMetaDescription(content),
+    }
   );
 
 export async function onRequestGet(

@@ -31,13 +31,20 @@ registerCSS(
 
 export const renderLayout = (
   children: string,
-  options: { title: string }
+  options: { title: string; description?: string }
 ) => /* HTML */ `<!DOCTYPE html>
   <html lang="en">
     <head>
       <title>${options.title}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="/styles/normalize.css" />
       <link rel="stylesheet" href="/styles/markdown.css" />
+      <meta name="title" content=${options.title} />
+      <meta
+        name="description"
+        content=${options.description || "I write, code, and teach."}
+      />
+
       <link
         rel="icon"
         href="/images/icon.jpg"
