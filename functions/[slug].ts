@@ -4,6 +4,15 @@ import { registerCSS } from "@/src/lib/styles";
 import { renderMarkdown } from "@/src/ui/markdown";
 import { renderPageHeading } from "@/src/ui/pageHeading";
 
+function escapeHTML(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 function makeMetaDescription(text: string): string {
   // Finding the end of the first paragraph
   const paragraphEnd = text.indexOf("\n");
@@ -20,7 +29,7 @@ function makeMetaDescription(text: string): string {
         : firstParagraph;
   }
 
-  return firstParagraph;
+  return escapeHTML(firstParagraph);
 }
 
 registerCSS(

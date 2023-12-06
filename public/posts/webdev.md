@@ -1,5 +1,3 @@
-<!-- Modern Web Development is Too Complex -->
-
 We recently started an online full-stack development bootcamp. So far, we’ve covered the basics of HTML, CSS, and JavaScript, and we’re about to dive into ReactJS and NextJS. In the process of teaching these topics, I’ve realized that web development today is simply too complex and requires familiarity with too many concepts.
 
 Imagine someone you know who doesn’t know any programming. Now, think about what it would take for them to build a web application. They’ll have to start with the basics: HTML, CSS, and JavaScript. But they can’t stop there; they’ll have to learn about responsive design using CSS frameworks like Bootstrap. They’ll need to learn NodeJS as well to install libraries and use frameworks.
