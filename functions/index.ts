@@ -18,7 +18,7 @@ const homePage = renderLayout(
     <div>${renderMarkdown(bio)}</div>
     <div>${posts.map((post) => renderPostItem(post)).join("\n")}</div>
   `,
-  { title: "Aakash N S" }
+  { title: "Aakash N S", description: "I write, code, and teach." }
 );
 
 export async function onRequestGet() {

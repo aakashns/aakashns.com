@@ -31,7 +31,7 @@ registerCSS(
 
 export const renderLayout = (
   children: string,
-  options: { title: string; description?: string }
+  options: { title: string; description: string }
 ) => /* HTML */ `<!DOCTYPE html>
   <html lang="en">
     <head>
@@ -40,10 +40,7 @@ export const renderLayout = (
       <link rel="stylesheet" href="/styles/normalize.css" />
       <link rel="stylesheet" href="/styles/markdown.css" />
       <meta name="title" content=${options.title} />
-      <meta
-        name="description"
-        content=${options.description || "I write, code, and teach."}
-      />
+      <meta name="description" content=${options.description} />
 
       <link
         rel="icon"
