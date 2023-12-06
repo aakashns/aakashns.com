@@ -40,7 +40,7 @@ export const renderLayout = (
       <link rel="stylesheet" href="/styles/normalize.css" />
       <link rel="stylesheet" href="/styles/markdown.css" />
       <meta name="title" content=${options.title} />
-      <meta name="description" content=${options.description} />
+      <meta name="description" content="${options.description}" />
 
       <link
         rel="icon"
