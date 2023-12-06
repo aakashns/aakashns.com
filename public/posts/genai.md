@@ -1,3 +1,5 @@
+<!-- What's up with Generative AI? -->
+
 Over the past three months, I’ve attended dozens of Generative AI meetups, hackathons & conferences in the San Francisco Bay Area. I met with several founders, engineers, and early-stage investors interested in or actively working with Generative AI and large language models (LLMs).
 
 Here’s a summary of my learnings about the current state of Generative AI:
