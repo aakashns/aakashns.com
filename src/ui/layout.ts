@@ -38,6 +38,12 @@ export const renderLayout = (
       <title>${options.title}</title>
       <link rel="stylesheet" href="/styles/normalize.css" />
       <link rel="stylesheet" href="/styles/markdown.css" />
+      <link
+        rel="icon"
+        href="/images/icon.jpg"
+        type="image/jpeg"
+        sizes="48x48"
+      />
       <style type="text/css">
         ${generateCSS()}
       </style>
