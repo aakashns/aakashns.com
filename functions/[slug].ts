@@ -27,7 +27,9 @@ const renderPostPage = (post: Post, content: string) =>
     { title: `${post.title} - Aakash N S` }
   );
 
-export async function onRequestGet(context: EventContext<unknown, string, unknown>) {
+export async function onRequestGet(
+  context: EventContext<unknown, string, unknown>
+) {
   const slug = context.params.slug;
   const request = context.request;
 
@@ -42,6 +44,7 @@ export async function onRequestGet(context: EventContext<unknown, string, unknow
   return new Response(renderPostPage(post, content), {
     headers: {
       "content-type": "text/html;charset=UTF-8",
+      "Cache-Control": "stale-while-revalidate=60",
     },
   });
 }

@@ -25,6 +25,7 @@ export async function onRequestGet() {
   return new Response(homePage, {
     headers: {
       "content-type": "text/html;charset=UTF-8",
+      "Cache-Control": "stale-while-revalidate=60",
     },
   });
 }
