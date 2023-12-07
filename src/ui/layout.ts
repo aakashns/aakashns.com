@@ -16,7 +16,7 @@ registerCSS(
   /* CSS */ `
     .container {
       max-width: 672px;
-      margin: 32px 16px;
+      margin: 32px 16px 64px 16px;
     }
 
     @media screen and (min-width: 768px) {
