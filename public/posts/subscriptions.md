@@ -2,7 +2,7 @@ I'm considering establishing a new ground rule for myself and my company: "No Su
 
 You start out with one or two seemingly harmless subscriptions, telling yourself, "Even if I use it 2-3 times a month, it'll justify the cost." It's hard to argue with that, because it's true. This line of argument then becomes a mental shortcut, so whenever you encounter a new product or service that requires a subscription, you justify it without much thought and sign up.
 
-Soon enough, however, you end up with dozens of subscriptions, each for a seemingly insignificant amount compared to the value you can derive from it. Together, however, they add up to a significant portion of your monthly expenses. I've encountered this both in my personal life and as a business owner.
+Soon enough, you end up with dozens of subscriptions, each for a seemingly insignificant amount compared to the value you can derive from it. Together, however, they add up to a significant portion of your monthly expenses. I've encountered this both in my personal life and as a business owner.
 
 In the latter case, it's much worse because you're paying more per employee as you buy new subscriptions and more per product or service as the size of your team grows. You are locked into each product because of the data it holds, and you're forced to buy new seats because there's no other way for new employees to access that data.
 
