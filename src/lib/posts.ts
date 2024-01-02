@@ -26,6 +26,11 @@ export const posts: Post[] = [
     date: "April 28, 2023",
   },
   {
+    slug: "slack",
+    title: "Slack Power User Guide",
+    date: "December 2, 2022",
+  },
+  {
     slug: "work",
     title: "Leaving Work at Work",
     date: "February 13, 2022",
