@@ -25,4 +25,9 @@ export const posts: Post[] = [
     title: "Modern Web Development is Too Complex",
     date: "April 28, 2023",
   },
+  {
+    slug: "work",
+    title: "Leaving Work at Work",
+    date: "February 13, 2022",
+  },
 ];
