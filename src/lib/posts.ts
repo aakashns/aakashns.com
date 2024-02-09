@@ -6,6 +6,11 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "software",
+    title: "The Business of Software",
+    date: "February 9, 2024",
+  },
+  {
     slug: "delete",
     title: "Deleting 50,000 Lines of Code in 3 Days",
     date: "December 13, 2023",
