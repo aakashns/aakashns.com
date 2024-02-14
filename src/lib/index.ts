@@ -1,3 +1,5 @@
+import { renderMarkdown } from "../ui/markdown";
+
 function escapeHTML(str: string): string {
   return str
     .replace(/&/g, "&amp;")
@@ -23,5 +25,5 @@ export function makeMetaDescription(text: string): string {
         : firstParagraph;
   }
 
-  return escapeHTML(firstParagraph);
+  return escapeHTML(renderMarkdown(firstParagraph).replace(/<[^>]*>/g, ""));
 }
