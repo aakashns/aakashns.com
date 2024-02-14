@@ -1,8 +1,8 @@
-![](https://miro.medium.com/v2/resize:fit:1400/1*irCUB_R2R33sTa5h8fLmGA.gif)
-
 Slack is simply email with a higher volume and an unreasonable expectation of instant replies. Pretty much all work-related conversations happen on Slack, and one might even say it is the only viable medium to do so for most companies.
 
 At [Jovian](https://www.jovian.ai/), we offer private chat support for participants of our Data Science & ML Bootcamp over Slack, where we receive hundreds of queries every day. We’re able to address over 90% of queries within 24 hours with a team of just five, and each of us gets to inbox zero every single day.
+
+![](https://miro.medium.com/v2/resize:fit:1400/1*irCUB_R2R33sTa5h8fLmGA.gif)
 
 Here are some strategies for staying on top of Slack conversations:
 
