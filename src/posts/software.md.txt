@@ -1,3 +1,5 @@
+<!-- The Business of Software -->
+
 The fundamentals of business are simple: you make something people want and convince them to pay more than what it costs you to make and sell it. This sounds almost obvious, but I don’t think I fully understood or internalized it for a long time. I definitely didn’t use it as the foundation for making decisions, which is where it really matters.
 
 I operated with the sense of “build something cool and somehow it will work out,” which is true to some extent, like with many open-source projects, but it can severely limit the overall impact of what you’ve built. Linux and Git are notable exceptions, but even there, one could argue that big corporations have benefited far more from them compared to their creator Linus Torvalds. That is probably still acceptable because it is ultimately end users who are the real beneficiaries.
