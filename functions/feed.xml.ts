@@ -1,6 +1,6 @@
-import { makeMetaDescription } from "@/src/lib";
-import { posts } from "@/src/posts";
-import { renderMarkdown } from "@/src/ui/markdown";
+import { makeMetaDescription } from "shared/lib";
+import { posts } from "shared/posts";
+import { renderMarkdown } from "shared/ui/markdown";
 import * as he from "he";
 
 export function onRequestGet(context: EventContext<unknown, string, unknown>) {
@@ -14,7 +14,7 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
       <guid>${baseUrl}/${post.slug}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
       <description>
-        <![CDATA[${makeMetaDescription(post.content)}]]>
+        <![CDATA[${makeMetaDescription(post.content, 480)}]]>
       </description>
       <content type="html">${he.encode(renderMarkdown(post.content))}></content>
     </item>
@@ -22,7 +22,7 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
     )
     .join("\n");
 
-  const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
+  const rssFeed = /*xml*/ `<?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
       <channel>
         <title>Aakash N S</title>
@@ -36,7 +36,7 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
 
   return new Response(rssFeed, {
     headers: {
-      "content-type": "application/rss+xml;charset=UTF-8",
+      "content-type": "text/xml;charset=UTF-8",
       "Cache-Control": "stale-while-revalidate=60",
     },
   });

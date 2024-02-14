@@ -1,8 +1,8 @@
-import { posts } from "@/src/posts";
-import { renderLayout } from "@/src/ui/layout";
-import { renderMarkdown } from "@/src/ui/markdown";
-import { renderPageHeading } from "@/src/ui/pageHeading";
-import { renderPostItem } from "@/src/ui/postItem";
+import { posts } from "shared/posts";
+import { renderLayout } from "shared/ui/layout";
+import { renderMarkdown } from "shared/ui/markdown";
+import { renderPageHeading } from "shared/ui/pageHeading";
+import { renderPostItem } from "shared/ui/postItem";
 
 const bio = `I write, code, and teach.`;
 

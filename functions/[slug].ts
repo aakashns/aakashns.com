@@ -1,9 +1,9 @@
-import { Post, posts } from "@/src/posts";
-import { renderLayout } from "@/src/ui/layout";
-import { registerCSS } from "@/src/lib/styles";
-import { renderMarkdown } from "@/src/ui/markdown";
-import { renderPageHeading } from "@/src/ui/pageHeading";
-import { makeMetaDescription } from "@/src/lib";
+import { Post, posts } from "shared/posts";
+import { renderLayout } from "shared/ui/layout";
+import { registerCSS } from "shared/lib/styles";
+import { renderMarkdown } from "shared/ui/markdown";
+import { renderPageHeading } from "shared/ui/pageHeading";
+import { makeMetaDescription } from "shared/lib";
 
 registerCSS(
   "post-page",
