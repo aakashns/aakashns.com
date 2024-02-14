@@ -13,9 +13,6 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
       <link>${baseUrl}/${post.slug}</link>
       <guid>${baseUrl}/${post.slug}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <description>
-        <![CDATA[${makeMetaDescription(post.content, 240)}]]>
-      </description>
       <content type="html">${he.encode(renderMarkdown(post.content))}</content>
     </item>
   `
