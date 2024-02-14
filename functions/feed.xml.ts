@@ -1,5 +1,6 @@
 import { posts } from "@/src/posts";
 import { renderMarkdown } from "@/src/ui/markdown";
+import * as he from "he";
 
 export function onRequestGet(context: EventContext<unknown, string, unknown>) {
   const baseUrl = new URL(context.request.url).origin;
@@ -11,7 +12,7 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
       <link>${baseUrl}/${post.slug}</link>
       <guid>${baseUrl}/${post.slug}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <content type="html">${renderMarkdown(post.content)}></content>
+      <content type="html">${he.encode(renderMarkdown(post.content))}></content>
     </item>
   `
     )
