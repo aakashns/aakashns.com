@@ -1,3 +1,4 @@
+import { makeMetaDescription } from "@/src/lib";
 import { posts } from "@/src/posts";
 import { renderMarkdown } from "@/src/ui/markdown";
 import * as he from "he";
@@ -12,6 +13,9 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
       <link>${baseUrl}/${post.slug}</link>
       <guid>${baseUrl}/${post.slug}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
+      <description>
+        <![CDATA[${makeMetaDescription(post.content)}]]>
+      </description>
       <content type="html">${he.encode(renderMarkdown(post.content))}></content>
     </item>
   `
