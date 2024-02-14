@@ -16,7 +16,7 @@ export function onRequestGet(context: EventContext<unknown, string, unknown>) {
       <description>
         <![CDATA[${makeMetaDescription(post.content, 240)}]]>
       </description>
-      <content type="html">${he.encode(renderMarkdown(post.content))}></content>
+      <content type="html">${he.encode(renderMarkdown(post.content))}</content>
     </item>
   `
     )
