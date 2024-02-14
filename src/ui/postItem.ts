@@ -1,4 +1,4 @@
-import { Post } from "../lib/posts";
+import { Post } from "../posts";
 import { registerCSS } from "../lib/styles";
 
 registerCSS(

@@ -1,4 +1,4 @@
-import { Post, posts } from "@/src/lib/posts";
+import { Post, posts } from "@/src/posts";
 import { renderLayout } from "@/src/ui/layout";
 import { registerCSS } from "@/src/lib/styles";
 import { renderMarkdown } from "@/src/ui/markdown";
@@ -43,18 +43,18 @@ registerCSS(
     }`
 );
 
-const renderPostPage = (post: Post, content: string) =>
+const renderPostPage = (post: Post) =>
   renderLayout(
     /* HTML */ `
       <div class="post-page">
         ${renderPageHeading(post.title)}
         <div class="post-date">${post.date}</div>
-        ${renderMarkdown(content)}
+        ${renderMarkdown(post.content)}
       </div>
     `,
     {
       title: `${post.title} - Aakash N S`,
-      description: makeMetaDescription(content),
+      description: makeMetaDescription(post.content),
     }
   );
 
@@ -62,17 +62,13 @@ export async function onRequestGet(
   context: EventContext<unknown, string, unknown>
 ) {
   const slug = context.params.slug;
-  const request = context.request;
 
   const post = posts.find((p) => p.slug === slug);
   if (!post) {
     return new Response("not found");
   }
 
-  const contentUrl = `${new URL(request.url).origin}/posts/${post.slug}.md`;
-  const content = await fetch(contentUrl).then((r) => r.text());
-
-  return new Response(renderPostPage(post, content), {
+  return new Response(renderPostPage(post), {
     headers: {
       "content-type": "text/html;charset=UTF-8",
       "Cache-Control": "stale-while-revalidate=60",

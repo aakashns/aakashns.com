@@ -1,4 +1,4 @@
-import { posts } from "@/src/lib/posts";
+import { posts } from "@/src/posts";
 import { renderLayout } from "@/src/ui/layout";
 import { renderMarkdown } from "@/src/ui/markdown";
 import { renderPageHeading } from "@/src/ui/pageHeading";
