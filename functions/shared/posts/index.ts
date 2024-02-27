@@ -5,6 +5,7 @@ import genaiContent from "./genai.md.txt";
 import webdevContent from "./webdev.md.txt";
 import slackContent from "./slack.md.txt";
 import workContent from "./work.md.txt";
+import typescriptContent from "./typescript.md.txt";
 
 export interface Post {
   slug: string;
@@ -14,6 +15,12 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  {
+    slug: "typescript",
+    title: "Moving Away from TypeScript",
+    date: "February 27, 2024",
+    content: typescriptContent,
+  },
   {
     slug: "software",
     title: "The Business of Software",
