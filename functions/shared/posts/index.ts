@@ -6,6 +6,7 @@ import webdevContent from "./webdev.md.txt";
 import slackContent from "./slack.md.txt";
 import workContent from "./work.md.txt";
 import typescriptContent from "./typescript.md.txt";
+import entrepreneurshipContent from "./entrepreneurship.md.txt";
 
 export interface Post {
   slug: string;
@@ -15,6 +16,12 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  {
+    slug: "entrepreneurship",
+    title: "Highs and Lows of Entrepreneurship",
+    date: "March 15, 2024",
+    content: entrepreneurshipContent,
+  },
   {
     slug: "typescript",
     title: "Moving Away from TypeScript",
