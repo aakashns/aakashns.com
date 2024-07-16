@@ -7,6 +7,7 @@ import slackContent from "./slack.md.txt";
 import workContent from "./work.md.txt";
 import typescriptContent from "./typescript.md.txt";
 import entrepreneurshipContent from "./entrepreneurship.md.txt";
+import depressionContent from "./depression.md.txt";
 
 export interface Post {
   slug: string;
@@ -16,6 +17,12 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  {
+    slug: "depression",
+    title: "Battling Depression",
+    date: "Jul 16, 2024",
+    content: depressionContent,
+  },
   {
     slug: "entrepreneurship",
     title: "Highs and Lows of Entrepreneurship",
